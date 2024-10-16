@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse; /* Ensure no spacing between borders */
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+        }
+        th {
+            background-color: #2b5123;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow */
+            border: none; /* Remove border */
+        }
+        th:first-child {
+            border-top-left-radius: 10px; /* Top left corner */
+        }
+        th:last-child {
+            border-top-right-radius: 10px; /* Top right corner */
+        }
+        td {
+            padding: 10px;
+            border: none; /* Remove border */
+        }
+        .rank2 {
+            color: #2b5123;
+            background-color: #edebeb;
+            font-weight: bold; /* Increase font weight */
+        }
+        .rank3 {
+            border-bottom: 3px solid #2b5123;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Points</th>
+            <th>Team</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Domestic</td>
+            <td>88,110</td>
+            <td>dcode</td>
+        </tr>
+        <tr class="rank2">
+            <td>2</td>
+            <td>Sally</td>
+            <td>72,400</td>
+            <td>Students</td>
+        </tr>
+        <tr class="rank3">
+            <td>3</td>
+            <td>Nick</td>
+            <td>52,300</td>
+            <td>dcode</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
